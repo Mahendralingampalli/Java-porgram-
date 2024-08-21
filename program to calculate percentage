@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+class student{
+    int total;
+}
+
+public class calcaulate {
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+        student s1=new student();
+        System.out.print("Enter a marks of maths : " );
+        s1.total=sc.nextInt();
+        
+        student s2=new student();
+        System.out.print("ENTER a marks of english :");
+        s2.total=sc.nextInt();
+
+        student s3 =new student();
+        System.out.print("enter a marks of science :");
+        s3.total=sc.nextInt();
+
+        student s4=new student();
+        System.out.print("Enter a mark of scoial study : ");
+        s4.total=sc.nextInt();
+
+        student s5=new student();
+        System.out.print("enter a marks of sanakrit : ");
+        s5.total=sc.nextInt();
+          
+        int  obt=(s1.total)+ (s2.total)+(s3.total)+(s4.total)+ (s5.total);
+         
+       float per=(obt*100)/500;
+      System.out.println(per+"%");
+
+
+        
+      
+    }
+    
+}
